@@ -1,0 +1,60 @@
+.size1 {
+  font-size: 12px;
+}
+
+.size2 {
+  font-size: 14px;
+}
+
+.size3 {
+  font-size: 16px;
+}
+
+.size4 {
+  font-size: 18px;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.black {
+  color: #000;
+}
+
+.gray {
+  color: #666;
+}
+
+.red {
+  color: #f00;
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
