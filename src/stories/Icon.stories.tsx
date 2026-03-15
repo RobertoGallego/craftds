@@ -18,24 +18,25 @@ export const AllIcons: Story = {
   },
   render: () => (
     <div style={{ display: "flex", gap: "16px" }}>
-      <Icon name="home" size={16} />
-      <Icon name="hospital" size={16} />
+      <Icon name="home" size={48} color="#1d4ed8" />
+      <Icon name="hospital" size={48} color="#dc2626" />
     </div>
   ),
   play: async ({ canvasElement }) => {
     const icons = canvasElement.querySelectorAll("svg")
     await expect(icons.length).toBe(2)
-    icons.forEach(async (icon) => {
+    for (const icon of icons) {
       await expect(icon).toBeInTheDocument()
       await expect(icon).toBeVisible()
-    })
+    }
   },
 }
 
-export const DynamicHome: Story = {
+export const DynamicHospital: Story = {
   args: {
-    name: "home",
-    size: 16,
+    name: "hospital",
+    size: 48,
+    color: "#dc2626",
   },
   play: async ({ canvasElement }) => {
     const icon = canvasElement.querySelector("svg")
@@ -44,10 +45,11 @@ export const DynamicHome: Story = {
   },
 }
 
-export const DynamicHospital: Story = {
+export const DynamicHome: Story = {
   args: {
-    name: "hospital",
-    size: 16,
+    name: "home",
+    size: 48,
+    color: "#1d4ed8",
   },
   play: async ({ canvasElement }) => {
     const icon = canvasElement.querySelector("svg")

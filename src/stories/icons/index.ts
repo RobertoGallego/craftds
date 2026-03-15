@@ -1,6 +1,7 @@
 import type { ComponentType, SVGProps } from "react"
-import { HomeIcon } from "./HomeIcon"
-import { HospitalIcon } from "./HospitalIcon"
+
+import HomeIcon from "../../assets/home.svg?react"
+import HospitalIcon from "../../assets/hospital.svg?react"
 
 type SvgIconComponent = ComponentType<SVGProps<SVGSVGElement>>
 
